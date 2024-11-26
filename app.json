@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ProjetoICareApp",
-    "slug": "ProjetoICareApp",
+    "slug": "icareapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -36,6 +36,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e72f2732-8f0a-4a1e-ad4e-a51d2ca862e5"
+      }
+    },
+    "owner": "joaohvittor"
   }
 }
