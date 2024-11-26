@@ -1,12 +1,16 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View, Text } from 'react-native';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { SignUpForm } from './components/formularios';
 
-const App = () => {
+const SignUpScreen = () => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Olá, React Native!</Text>
+    <View>
+      <SignUpForm />
     </View>
   );
 };
 
-export default App;
+export default SignUpScreen;
