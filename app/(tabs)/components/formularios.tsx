@@ -15,7 +15,7 @@ export const LoginForm = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Login</Text>
+      <Text style={styles.title}>Bem Vindo ao ICare</Text>
       <TextInput
         style={styles.input}
         placeholder="Digite seu e-mail"
@@ -46,7 +46,7 @@ export const SignUpForm = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Cadastro</Text>
+      <Text style={styles.title}>Cadastre-se na ICare</Text>
       <TextInput
         style={styles.input}
         placeholder="Digite seu nome"
@@ -62,6 +62,13 @@ export const SignUpForm = () => {
       <TextInput
         style={styles.input}
         placeholder="Digite sua senha"
+        secureTextEntry
+        value={password}
+        onChangeText={setPassword}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Confirme a sua senha"
         secureTextEntry
         value={password}
         onChangeText={setPassword}
